@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliminar cuenta — Crónico</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #FAF9F8;
+      color: #1C2A3A;
+      line-height: 1.7;
+    }
+    header {
+      background: #fff;
+      border-bottom: 1px solid #E5E7EB;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: #FEF2F2;
+      color: #991B1B;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+      border: 1px solid #FECACA;
+    }
+    header h1 { font-size: 28px; font-weight: 700; color: #1C2A3A; margin-bottom: 6px; }
+    header p  { font-size: 14px; color: #6B7280; }
+    .container { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+    section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+      border: 1px solid #E5E7EB;
+    }
+    section h2 { font-size: 16px; font-weight: 700; color: #1C2A3A; margin-bottom: 12px; }
+    section p, section li { font-size: 14px; color: #4B5563; line-height: 1.75; }
+    section ul { padding-left: 20px; margin-top: 8px; }
+    section ul li { margin-bottom: 4px; }
+    .steps { counter-reset: steps; list-style: none; padding: 0; }
+    .steps li {
+      counter-increment: steps;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid #F3F4F6;
+      font-size: 14px;
+      color: #4B5563;
+    }
+    .steps li:last-child { border-bottom: none; }
+    .steps li::before {
+      content: counter(steps);
+      min-width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #E8420A;
+      color: #fff;
+      font-weight: 700;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .alerta {
+      background: #FFF4E5;
+      border: 1px solid #FFD0B0;
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: #374151;
+    }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13px; }
+    th { background: #F9FAFB; text-align: left; padding: 10px 12px; color: #374151; font-weight: 600; border-bottom: 1px solid #E5E7EB; }
+    td { padding: 10px 12px; color: #4B5563; border-bottom: 1px solid #F3F4F6; vertical-align: top; }
+    a { color: #E8420A; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 32px 24px; font-size: 12px; color: #9CA3AF; border-top: 1px solid #E5E7EB; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">🗑️ Eliminación de cuenta</div>
+  <h1>Eliminar tu cuenta en Crónico</h1>
+  <p>ABK · <a href="mailto:cronico008@gmail.com">cronico008@gmail.com</a></p>
+</header>
+
+<div class="container">
+
+  <div class="alerta">
+    <strong>Importante:</strong> La eliminación de cuenta es permanente e irreversible. Una vez confirmada, no podremos recuperar tus datos.
+  </div>
+
+  <section>
+    <h2>Cómo eliminar tu cuenta desde la app</h2>
+    <ul class="steps">
+      <li>Abrí la app <strong>Crónico</strong> en tu dispositivo.</li>
+      <li>Tocá la pestaña <strong>Perfil</strong> (ícono de persona, esquina inferior derecha).</li>
+      <li>Deslizá hacia abajo y tocá <strong>"Eliminar cuenta"</strong>.</li>
+      <li>Confirmá la acción en el diálogo que aparece.</li>
+      <li>Tu cuenta y todos tus datos serán eliminados de forma permanente.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Solicitar eliminación por correo</h2>
+    <p>Si no podés acceder a la app, podés solicitar la eliminación de tu cuenta enviando un correo a <a href="mailto:cronico008@gmail.com">cronico008@gmail.com</a> con el asunto <strong>"Solicitud de eliminación de cuenta"</strong> desde la dirección de correo con la que te registraste.</p>
+    <p style="margin-top:10px;">Procesaremos tu solicitud en un plazo máximo de <strong>5 días hábiles</strong>.</p>
+  </section>
+
+  <section>
+    <h2>Qué datos se eliminan y qué se conserva</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tipo de dato</th>
+          <th>¿Se elimina?</th>
+          <th>Plazo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Perfil (nombre, email, fecha de nacimiento, cobertura)</td>
+          <td>✅ Sí, eliminado</td>
+          <td>Inmediato</td>
+        </tr>
+        <tr>
+          <td>Condiciones crónicas registradas</td>
+          <td>✅ Sí, eliminado</td>
+          <td>Inmediato</td>
+        </tr>
+        <tr>
+          <td>Medicamentos y registros de tomas</td>
+          <td>✅ Sí, eliminado</td>
+          <td>Inmediato</td>
+        </tr>
+        <tr>
+          <td>Registros de bienestar y mediciones</td>
+          <td>✅ Sí, eliminado</td>
+          <td>Inmediato</td>
+        </tr>
+        <tr>
+          <td>Eventos del calendario de salud</td>
+          <td>✅ Sí, eliminado</td>
+          <td>Inmediato</td>
+        </tr>
+        <tr>
+          <td>Posts en la comunidad</td>
+          <td>✅ Sí, eliminado</td>
+          <td>Dentro de 30 días</td>
+        </tr>
+        <tr>
+          <td>Token de notificaciones push</td>
+          <td>✅ Sí, eliminado</td>
+          <td>Inmediato</td>
+        </tr>
+        <tr>
+          <td>Datos de autenticación (Supabase Auth)</td>
+          <td>✅ Sí, eliminado</td>
+          <td>Dentro de 30 días</td>
+        </tr>
+        <tr>
+          <td>Registros de seguridad internos</td>
+          <td>⚠️ Conservados temporalmente</td>
+          <td>Hasta 90 días por razones de seguridad</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <p><strong>Crónico — ABK</strong><br>
+    Correo: <a href="mailto:cronico008@gmail.com">cronico008@gmail.com</a><br>
+    República Argentina</p>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2026 ABK · Crónico — <a href="privacidad.html">Política de Privacidad</a> · <a href="terminos.html">Términos y Condiciones</a>
+</footer>
+
+</body>
+</html>
